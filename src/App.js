@@ -1,9 +1,17 @@
+import { ColorModeContext,useMode } from "./theme";
+import { CssBaseline,ThemeProvider } from "@mui/material";
+import { Routes,Route } from "react-router-dom";
+import Dashboard from "./scenes/dashboard";
+import Sidebar from "./scenes/global/sidebar";
+
+
 
 function App() {
   return (
-    <div className="app">
-     
-    </div>
+       <ColorModeContext.Provider value={colorMode}>
+        
+       </ColorModeContext.Provider>
+    
   );
 }
 
